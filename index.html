@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Latihan Git</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Latihan Git</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .hero-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, var(--accent) 0%, #1e40af 100%);
+      color: white;
+    }
+    .hero-section h1 {
+      margin: 0 0 20px;
+      font-size: 2.5em;
+    }
+    .hero-section p {
+      font-size: 1.1em;
+      margin: 10px 0;
+      opacity: 0.95;
+    }
+    .menu-container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .menu-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #111;
+    }
+    .menu-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-list li {
+      margin: 0;
+    }
+    .menu-list a {
+      display: block;
+      padding: 20px;
+      background: white;
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .menu-list a:hover {
+      background: var(--accent);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+  </style>
 </head>
 <body>
-	<h1>Halo Dunia, ini latihan Git pertamaku!</h1>
-	<p>Menu:</p>
-	<ul>
-		<li><a href="dashboard.html">Dashboard sederhana</a></li>
-		<li><a href="tentang.html">Tentang</a></li>
-	</ul>
+  <header class="topbar">
+    <div class="brand">Dashboard</div>
+    <nav class="topnav">
+      <a href="index.html" class="active-link">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <div class="hero-section">
+    <h1>Selamat Datang!</h1>
+    <p>Ini adalah aplikasi latihan Git pertamaku</p>
+    <p>Praktikum Version Control System (VCS)</p>
+  </div>
+
+  <div class="menu-container">
+    <h2>Menu Aplikasi</h2>
+    <ul class="menu-list">
+      <li><a href="dashboard.html">📊 Dashboard</a></li>
+      <li><a href="tentang.html">ℹ️ Tentang</a></li>
+    </ul>
+  </div>
+
+  <footer class="footer">© 2026 Contoh Dashboard - Praktikum VC</footer>
 </body>
 </html>
